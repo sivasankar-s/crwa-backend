@@ -29,11 +29,7 @@ app.post('/send-sms', (req, res) => {
     .then(message =>  console.log(message.status));
     // .done();
   });
-  app.get('/', (req, res)=>{
-    res.json({
-      'hello':'hi'
-    })
-  })
+  
 
   // client.messagesrouter
   // .create({
@@ -46,6 +42,12 @@ app.post('/send-sms', (req, res) => {
 //   client.messages
 //     .create({
 });
+
+app.get('/', (req, res)=>{
+  res.json({
+    'hello':'hi'
+  })
+})
 
 // Start the server
 app.listen(port, () => {
