@@ -19,10 +19,10 @@ app.post('/send-sms', (req, res) => {
   const accountSid = "AC4dee4863afba02e1b8f8365a22578ba2";
   const authToken = "f5cc96217318852a77a0615fb6dc0bea";
   const client = require('twilio')(accountSid, authToken);
-
+//nochange
   phnNos.forEach(function(number){
     var message = client.messages.create({
-      body: `${title}, happened on ${location} visit https://dynamic-youtiao-ea47d1.netlify.app/ ...`,
+      body: `${title}, happened on ${location} visit https://crime-alert.netlify.app/ ...`,
       from: '+12567332270',
       to: `+91${number}`
     })
