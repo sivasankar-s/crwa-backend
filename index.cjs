@@ -17,7 +17,7 @@ app.post('/send-sms', (req, res) => {
 
   // Use the Twilio library to send an SMS
   const accountSid = "AC4dee4863afba02e1b8f8365a22578ba2";
-  const authToken = "babb7878240937410826ddf3de25eb21";
+  const authToken = "f5cc96217318852a77a0615fb6dc0bea";
   const client = require('twilio')(accountSid, authToken);
 
   phnNos.forEach(function(number){
